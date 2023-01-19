@@ -1,0 +1,248 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    width: 1080px;
+    margin: auto;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+body{
+    font-family: Arial;
+    background-color: #fcf5eb;
+}
+.downlod-butten-grp ul li a,
+nav .menu ul li a{
+    font-size: 18px;
+    line-height: 25px;
+    text-align: left;
+    color: #1c1e21;
+    padding: 0 10px;
+    position: relative;
+    display: block;
+}
+.downlod-butten-grp ul li a::after,
+nav .menu ul li a::after{
+    content: "";
+    width: 0%;
+    height: 2px;
+    background-color: #25d366;
+    position: absolute;
+    bottom:-4px;
+    left: 0;
+    transition: 0.3s;
+}
+.downlod-butten-grp ul li:hover a::after,
+nav .menu ul li:hover a::after{
+    width: 100%;
+    
+}
+
+.downlod-butten-grp ul {
+    text-align: right;
+
+}
+
+nav .downlod-butten-grp ul {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    
+}
+.downlod-butten{
+    background-color: #43cd66;
+    color: #1c1e21;
+    padding: 16px 28px !important;
+    font-size: 16px;
+    border: 1px solid #1c1e21;
+    border-radius: 35px;
+    overflow: hidden;
+    z-index: 1;
+    display: inline-block;
+    position: relative;
+}
+.downlod-butten::after{
+    content: "";
+    position: absolute;
+    background-color: #111 !important;
+    width: 100% !important;
+    height: 70px !important;
+    border-radius: 50% !important;
+    top: 100%;
+    bottom: auto;
+    left: 0;
+    z-index: -1;
+    transition: 0.5s !important;
+
+}
+.downlod-butten:hover{
+    color: white;
+}
+.downlod-butten:hover::after{
+    top: 0;
+    transform: scale(1.5);
+}
+nav{
+    padding: 30px 50px 40px 50px ;
+}
+nav .logo img{
+width: 130px;
+
+}
+a
+   { text-decoration: none;
+}
+ ul{
+    list-style: none;
+}
+nav .logo, nav .menu, nav .downlod-butten-grp{
+    width: 33.33%;
+    
+}
+nav ul li{
+    display: inline-block;
+margin-top: 10px;
+}
+.aling-center{
+    align-items: center;
+}
+#banner{
+    background-image: url(../img/bagro.png);
+    background-size: cover;
+    height: 750px;
+    background-repeat: no-repeat;
+    width:  calc(100% - 100px);
+    margin: auto;
+    border-radius: 15px;
+}
+.banner-cnt{
+    width: 30%;
+    color: #ffffff;
+
+}
+#banner .row{
+    height: 750px;
+    align-items: center;
+    margin-left: 30px;
+} 
+.banner-cnt h2 {
+   
+    font-size: 80px;
+    line-height: 80px;
+    text-align: left;
+    letter-spacing: -3.2px;
+    align-items: center;
+}
+.banner-cnt p{
+    font-size: 18px;
+    margin: 10px 0;
+
+}
+ .banner-cnt .downlod-butten::after{
+    background-color: #ffffff !important;
+ }
+ .banner-cnt .downlod-butten:hover{
+    color: #111;
+ }
+ .banner-cnt .downlod-butten{
+    border: none;
+ }
+ .banner-float-imges{
+    position: absolute;
+    display: block;
+ }
+ .voiseimg{
+    left: 800px;
+    bottom:180px;
+ }
+ .morimg{
+    left: 800px;
+
+    bottom: 380px;
+ }
+ .cupimg{
+    left: 750px;
+    bottom: 260px;
+ }
+ .picimg{
+    left: 800px;
+    top: 450px;
+ }
+ .smsimg{
+    left: 800px;
+    top: 750px;
+ }
+ .loveimg{
+    left: 800px;
+    bottom:350px;
+ }
+ .font p{
+    
+        font-size: 12px;
+        text-align: center;
+         line-height: 16.08px;
+          margin-left: 900px;   
+ }
+.emojiimg{
+    left: 800px;
+    top: 680px;
+}
+.containerimg img{
+    max-width: 100%;
+}
+.containerimg p{
+    
+    font-family: inherit;
+    font-weight: inherit;
+    line-height: inherit;
+    width: 800px;
+
+    margin-left: 240px;
+    
+    text-align: center;
+    align-items: center;
+    font-size: 40px;
+}
+#conference{
+    padding: 60px 0;
+}
+#conference .conference-img,
+#conference .conference-text{
+    width: 50%;
+}
+#conference .conference-img{
+    text-align: center;
+}
+#conference .conference-text h2{
+    font-size: 70px;
+    font-weight: 400px;
+}
+.conference-text-1 p,
+#conference .conference-text p{
+    color: #0e5fd8;
+    font-size: 18px;
+    line-height: 25px;
+    margin: 9px 0;
+    width: 435px;
+}
+#conference .conference-text .links{
+  color: #111; 
+  position: relative; 
+}
+.links:hover{
+    color: #43cd66 !important;
+
+}
+.links .link-text::after{
+    content: "";
+    width: 100%;
+    height: 2px;
+    background-color: #25d366;
+   bottom:-5px;
+   left: 0;
+   position: absolute;
+}
